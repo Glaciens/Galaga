@@ -1,0 +1,278 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sat Jul 21 00:51:50 2018
+| Host         : Acer-Aspire running 64-bit Service Pack 1  (build 7601)
+| Command      : report_clock_utilization -file Galaga_clock_utilization_routed.rpt
+| Design       : Galaga
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Global Clock Resources
+3. Global Clock Source Details
+4. Local Clock Details
+5. Clock Regions: Key Resource Utilization
+6. Clock Regions : Global Clock Summary
+7. Device Cell Placement Summary for Global Clock g0
+8. Clock Region Cell Placement per Global Clock: Region X0Y0
+9. Clock Region Cell Placement per Global Clock: Region X1Y0
+10. Clock Region Cell Placement per Global Clock: Region X0Y1
+11. Clock Region Cell Placement per Global Clock: Region X1Y1
+
+1. Clock Primitive Utilization
+------------------------------
+
++----------+------+-----------+-----+--------------+--------+
+| Type     | Used | Available | LOC | Clock Region | Pblock |
++----------+------+-----------+-----+--------------+--------+
+| BUFGCTRL |    1 |        32 |   0 |            0 |      0 |
+| BUFH     |    0 |        48 |   0 |            0 |      0 |
+| BUFIO    |    0 |         8 |   0 |            0 |      0 |
+| BUFMR    |    0 |         4 |   0 |            0 |      0 |
+| BUFR     |    0 |         8 |   0 |            0 |      0 |
+| MMCM     |    1 |         2 |   0 |            0 |      0 |
+| PLL      |    0 |         2 |   0 |            0 |      0 |
++----------+------+-----------+-----+--------------+--------+
+
+
+2. Global Clock Resources
+-------------------------
+
++-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+-----------------+--------------------------+-----------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock           | Driver Pin               | Net                   |
++-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+-----------------+--------------------------+-----------------------+
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 4 |        2465 |               0 |       13.333 | Clk75MHz_unbuff | CLKTree_inst/BUFG_inst/O | CLKTree_inst/Clk75MHz |
++-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+-----------------+--------------------------+-----------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+3. Global Clock Source Details
+------------------------------
+
++-----------+-----------+--------------------+------------+-----------------+--------------+-------------+-----------------+---------------------+-----------------+---------------------------------------+------------------------------+
+| Source Id | Global Id | Driver Type/Pin    | Constraint | Site            | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock    | Driver Pin                            | Net                          |
++-----------+-----------+--------------------+------------+-----------------+--------------+-------------+-----------------+---------------------+-----------------+---------------------------------------+------------------------------+
+| src0      | g0        | MMCME2_ADV/CLKOUT0 | None       | MMCME2_ADV_X0Y1 | X1Y1         |           1 |               0 |              13.333 | Clk75MHz_unbuff | CLKTree_inst/MMCME2_BASE_inst/CLKOUT0 | CLKTree_inst/Clk75MHz_unbuff |
++-----------+-----------+--------------------+------------+-----------------+--------------+-------------+-----------------+---------------------+-----------------+---------------------------------------+------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+4. Local Clock Details
+----------------------
+
++----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------+-------------------------------------------+
+| Local Id | Driver Type/Pin | Constraint | Site/BEL          | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                             | Net                                       |
++----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------+-------------------------------------------+
+| 0        | FDRE/Q          | None       | SLICE_X40Y47/B5FF | X1Y0         |           7 |               1 |              |       | level_inst/timer_reg[4]/Q              | level_inst/timer_reg__0[4]                |
+| 1        | FDRE/Q          | None       | SLICE_X4Y32/DFF   | X0Y0         |           3 |               1 |              |       | level_inst/bee1/timer_reg[23]/Q        | level_inst/bee1/timer_reg_n_0_[23]        |
+| 2        | FDRE/Q          | None       | SLICE_X28Y63/DFF  | X1Y1         |           3 |               1 |              |       | level_inst/bee10/timer_reg[23]/Q       | level_inst/bee10/timer_reg_n_0_[23]       |
+| 3        | FDRE/Q          | None       | SLICE_X3Y54/DFF   | X0Y1         |           3 |               1 |              |       | level_inst/bee11/timer_reg[23]/Q       | level_inst/bee11/timer_reg_n_0_[23]       |
+| 4        | FDRE/Q          | None       | SLICE_X5Y54/DFF   | X0Y1         |           3 |               1 |              |       | level_inst/bee12/timer_reg[23]/Q       | level_inst/bee12/timer_reg_n_0_[23]       |
+| 5        | FDRE/Q          | None       | SLICE_X29Y36/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/bee13/timer_reg[23]/Q       | level_inst/bee13/timer_reg_n_0_[23]       |
+| 6        | FDRE/Q          | None       | SLICE_X31Y34/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/bee14/timer_reg[23]/Q       | level_inst/bee14/timer_reg_n_0_[23]       |
+| 7        | FDRE/Q          | None       | SLICE_X39Y52/DFF  | X1Y1         |           3 |               1 |              |       | level_inst/bee15/timer_reg[23]/Q       | level_inst/bee15/timer_reg_n_0_[23]       |
+| 8        | FDRE/Q          | None       | SLICE_X35Y54/DFF  | X1Y1         |           3 |               1 |              |       | level_inst/bee16/timer_reg[23]/Q       | level_inst/bee16/timer_reg_n_0_[23]       |
+| 9        | FDRE/Q          | None       | SLICE_X27Y32/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/bee17/timer_reg[23]/Q       | level_inst/bee17/timer_reg_n_0_[23]       |
+| 10       | FDRE/Q          | None       | SLICE_X25Y31/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/bee18/timer_reg[23]/Q       | level_inst/bee18/timer_reg_n_0_[23]       |
+| 11       | FDRE/Q          | None       | SLICE_X23Y13/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/bee19/timer_reg[23]/Q       | level_inst/bee19/timer_reg_n_0_[23]       |
+| 12       | FDRE/Q          | None       | SLICE_X1Y33/DFF   | X0Y0         |           3 |               1 |              |       | level_inst/bee2/timer_reg[23]/Q        | level_inst/bee2/timer_reg_n_0_[23]        |
+| 13       | FDRE/Q          | None       | SLICE_X16Y14/DFF  | X0Y0         |           3 |               1 |              |       | level_inst/bee20/timer_reg[23]/Q       | level_inst/bee20/timer_reg_n_0_[23]       |
+| 14       | FDRE/Q          | None       | SLICE_X28Y43/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/bee3/timer_reg[23]/Q        | level_inst/bee3/timer_reg_n_0_[23]        |
+| 15       | FDRE/Q          | None       | SLICE_X23Y45/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/bee4/timer_reg[23]/Q        | level_inst/bee4/timer_reg_n_0_[23]        |
+| 16       | FDRE/Q          | None       | SLICE_X16Y58/DFF  | X0Y1         |           3 |               1 |              |       | level_inst/bee5/timer_reg[23]/Q        | level_inst/bee5/timer_reg_n_0_[23]        |
+| 17       | FDRE/Q          | None       | SLICE_X18Y58/DFF  | X0Y1         |           3 |               1 |              |       | level_inst/bee6/timer_reg[23]/Q        | level_inst/bee6/timer_reg_n_0_[23]        |
+| 18       | FDRE/Q          | None       | SLICE_X24Y66/DFF  | X1Y1         |           3 |               1 |              |       | level_inst/bee7/timer_reg[23]/Q        | level_inst/bee7/timer_reg_n_0_[23]        |
+| 19       | FDRE/Q          | None       | SLICE_X25Y67/DFF  | X1Y1         |           3 |               1 |              |       | level_inst/bee8/timer_reg[23]/Q        | level_inst/bee8/timer_reg_n_0_[23]        |
+| 20       | FDRE/Q          | None       | SLICE_X29Y65/DFF  | X1Y1         |           3 |               1 |              |       | level_inst/bee9/timer_reg[23]/Q        | level_inst/bee9/timer_reg_n_0_[23]        |
+| 21       | FDRE/Q          | None       | SLICE_X31Y15/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/boss1/timer_reg[23]/Q       | level_inst/boss1/timer_reg_n_0_[23]       |
+| 22       | FDRE/Q          | None       | SLICE_X33Y12/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/boss2/timer_reg[23]/Q       | level_inst/boss2/timer_reg_n_0_[23]       |
+| 23       | FDRE/Q          | None       | SLICE_X4Y14/DFF   | X0Y0         |           3 |               1 |              |       | level_inst/boss3/timer_reg[23]/Q       | level_inst/boss3/timer_reg_n_0_[23]       |
+| 24       | FDRE/Q          | None       | SLICE_X3Y15/DFF   | X0Y0         |           3 |               1 |              |       | level_inst/boss4/timer_reg[23]/Q       | level_inst/boss4/timer_reg_n_0_[23]       |
+| 25       | FDRE/Q          | None       | SLICE_X36Y31/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/butterfly1/timer_reg[23]/Q  | level_inst/butterfly1/timer_reg_n_0_[23]  |
+| 26       | FDRE/Q          | None       | SLICE_X36Y48/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/butterfly10/timer_reg[23]/Q | level_inst/butterfly10/timer_reg_n_0_[23] |
+| 27       | FDRE/Q          | None       | SLICE_X28Y7/DFF   | X1Y0         |           3 |               1 |              |       | level_inst/butterfly11/timer_reg[23]/Q | level_inst/butterfly11/timer_reg_n_0_[23] |
+| 28       | FDRE/Q          | None       | SLICE_X29Y8/DFF   | X1Y0         |           3 |               1 |              |       | level_inst/butterfly12/timer_reg[23]/Q | level_inst/butterfly12/timer_reg_n_0_[23] |
+| 29       | FDRE/Q          | None       | SLICE_X3Y45/DFF   | X0Y0         |           3 |               1 |              |       | level_inst/butterfly13/timer_reg[23]/Q | level_inst/butterfly13/timer_reg_n_0_[23] |
+| 30       | FDRE/Q          | None       | SLICE_X0Y49/DFF   | X0Y0         |           3 |               1 |              |       | level_inst/butterfly14/timer_reg[23]/Q | level_inst/butterfly14/timer_reg_n_0_[23] |
+| 31       | FDRE/Q          | None       | SLICE_X4Y61/DFF   | X0Y1         |           3 |               1 |              |       | level_inst/butterfly15/timer_reg[23]/Q | level_inst/butterfly15/timer_reg_n_0_[23] |
+| 32       | FDRE/Q          | None       | SLICE_X8Y60/DFF   | X0Y1         |           3 |               1 |              |       | level_inst/butterfly16/timer_reg[23]/Q | level_inst/butterfly16/timer_reg_n_0_[23] |
+| 33       | FDRE/Q          | None       | SLICE_X37Y36/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/butterfly2/timer_reg[23]/Q  | level_inst/butterfly2/timer_reg_n_0_[23]  |
+| 34       | FDRE/Q          | None       | SLICE_X34Y15/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/butterfly3/timer_reg[23]/Q  | level_inst/butterfly3/timer_reg_n_0_[23]  |
+| 35       | FDRE/Q          | None       | SLICE_X32Y15/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/butterfly4/timer_reg[23]/Q  | level_inst/butterfly4/timer_reg_n_0_[23]  |
+| 36       | FDRE/Q          | None       | SLICE_X8Y12/DFF   | X0Y0         |           3 |               1 |              |       | level_inst/butterfly5/timer_reg[23]/Q  | level_inst/butterfly5/timer_reg_n_0_[23]  |
+| 37       | FDRE/Q          | None       | SLICE_X7Y16/DFF   | X0Y0         |           3 |               1 |              |       | level_inst/butterfly6/timer_reg[23]/Q  | level_inst/butterfly6/timer_reg_n_0_[23]  |
+| 38       | FDRE/Q          | None       | SLICE_X15Y14/DFF  | X0Y0         |           3 |               1 |              |       | level_inst/butterfly7/timer_reg[23]/Q  | level_inst/butterfly7/timer_reg_n_0_[23]  |
+| 39       | FDRE/Q          | None       | SLICE_X20Y16/DFF  | X0Y0         |           3 |               1 |              |       | level_inst/butterfly8/timer_reg[23]/Q  | level_inst/butterfly8/timer_reg_n_0_[23]  |
+| 40       | FDRE/Q          | None       | SLICE_X35Y46/DFF  | X1Y0         |           3 |               1 |              |       | level_inst/butterfly9/timer_reg[23]/Q  | level_inst/butterfly9/timer_reg_n_0_[23]  |
+| 41       | FDRE/Q          | None       | SLICE_X35Y9/DFF   | X1Y0         |           3 |               1 |              |       | player_inst/ship1/timer_reg[23]/Q      | player_inst/ship1/CLK                     |
+| 42       | FDRE/Q          | None       | SLICE_X41Y11/AFF  | X1Y0         |           2 |               0 |              |       | menu_inst/buffer_reg/Q                 | menu_inst/buffer                          |
+| 43       | FDRE/Q          | None       | SLICE_X4Y33/AFF   | X0Y0         |           1 |               1 |              |       | level_inst/bee1/timer_reg[24]/Q        | level_inst/bee1/CLK                       |
+| 44       | FDRE/Q          | None       | SLICE_X28Y64/AFF  | X1Y1         |           1 |               1 |              |       | level_inst/bee10/timer_reg[24]/Q       | level_inst/bee10/CLK                      |
+| 45       | FDRE/Q          | None       | SLICE_X3Y55/AFF   | X0Y1         |           1 |               1 |              |       | level_inst/bee11/timer_reg[24]/Q       | level_inst/bee11/CLK                      |
+| 46       | FDRE/Q          | None       | SLICE_X5Y55/AFF   | X0Y1         |           1 |               1 |              |       | level_inst/bee12/timer_reg[24]/Q       | level_inst/bee12/CLK                      |
+| 47       | FDRE/Q          | None       | SLICE_X29Y37/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/bee13/timer_reg[24]/Q       | level_inst/bee13/CLK                      |
+| 48       | FDRE/Q          | None       | SLICE_X31Y35/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/bee14/timer_reg[24]/Q       | level_inst/bee14/CLK                      |
+| 49       | FDRE/Q          | None       | SLICE_X39Y53/AFF  | X1Y1         |           1 |               1 |              |       | level_inst/bee15/timer_reg[24]/Q       | level_inst/bee15/CLK                      |
+| 50       | FDRE/Q          | None       | SLICE_X35Y55/AFF  | X1Y1         |           1 |               1 |              |       | level_inst/bee16/timer_reg[24]/Q       | level_inst/bee16/CLK                      |
+| 51       | FDRE/Q          | None       | SLICE_X27Y33/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/bee17/timer_reg[24]/Q       | level_inst/bee17/CLK                      |
+| 52       | FDRE/Q          | None       | SLICE_X25Y32/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/bee18/timer_reg[24]/Q       | level_inst/bee18/CLK                      |
+| 53       | FDRE/Q          | None       | SLICE_X23Y14/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/bee19/timer_reg[24]/Q       | level_inst/bee19/CLK                      |
+| 54       | FDRE/Q          | None       | SLICE_X1Y34/AFF   | X0Y0         |           1 |               1 |              |       | level_inst/bee2/timer_reg[24]/Q        | level_inst/bee2/CLK                       |
+| 55       | FDRE/Q          | None       | SLICE_X16Y15/AFF  | X0Y0         |           1 |               1 |              |       | level_inst/bee20/timer_reg[24]/Q       | level_inst/bee20/CLK                      |
+| 56       | FDRE/Q          | None       | SLICE_X28Y44/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/bee3/timer_reg[24]/Q        | level_inst/bee3/CLK                       |
+| 57       | FDRE/Q          | None       | SLICE_X23Y46/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/bee4/timer_reg[24]/Q        | level_inst/bee4/CLK                       |
+| 58       | FDRE/Q          | None       | SLICE_X16Y59/AFF  | X0Y1         |           1 |               1 |              |       | level_inst/bee5/timer_reg[24]/Q        | level_inst/bee5/CLK                       |
+| 59       | FDRE/Q          | None       | SLICE_X18Y59/AFF  | X0Y1         |           1 |               1 |              |       | level_inst/bee6/timer_reg[24]/Q        | level_inst/bee6/CLK                       |
+| 60       | FDRE/Q          | None       | SLICE_X24Y67/AFF  | X1Y1         |           1 |               1 |              |       | level_inst/bee7/timer_reg[24]/Q        | level_inst/bee7/CLK                       |
+| 61       | FDRE/Q          | None       | SLICE_X25Y68/AFF  | X1Y1         |           1 |               1 |              |       | level_inst/bee8/timer_reg[24]/Q        | level_inst/bee8/CLK                       |
+| 62       | FDRE/Q          | None       | SLICE_X29Y66/AFF  | X1Y1         |           1 |               1 |              |       | level_inst/bee9/timer_reg[24]/Q        | level_inst/bee9/CLK                       |
+| 63       | FDRE/Q          | None       | SLICE_X31Y16/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/boss1/timer_reg[24]/Q       | level_inst/boss1/CLK                      |
+| 64       | FDRE/Q          | None       | SLICE_X33Y13/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/boss2/timer_reg[24]/Q       | level_inst/boss2/CLK                      |
+| 65       | FDRE/Q          | None       | SLICE_X4Y15/AFF   | X0Y0         |           1 |               1 |              |       | level_inst/boss3/timer_reg[24]/Q       | level_inst/boss3/CLK                      |
+| 66       | FDRE/Q          | None       | SLICE_X3Y16/AFF   | X0Y0         |           1 |               1 |              |       | level_inst/boss4/timer_reg[24]/Q       | level_inst/boss4/CLK                      |
+| 67       | FDRE/Q          | None       | SLICE_X36Y32/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/butterfly1/timer_reg[24]/Q  | level_inst/butterfly1/CLK                 |
+| 68       | FDRE/Q          | None       | SLICE_X36Y49/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/butterfly10/timer_reg[24]/Q | level_inst/butterfly10/CLK                |
+| 69       | FDRE/Q          | None       | SLICE_X28Y8/AFF   | X1Y0         |           1 |               1 |              |       | level_inst/butterfly11/timer_reg[24]/Q | level_inst/butterfly11/CLK                |
+| 70       | FDRE/Q          | None       | SLICE_X29Y9/AFF   | X1Y0         |           1 |               1 |              |       | level_inst/butterfly12/timer_reg[24]/Q | level_inst/butterfly12/CLK                |
+| 71       | FDRE/Q          | None       | SLICE_X3Y46/AFF   | X0Y0         |           1 |               1 |              |       | level_inst/butterfly13/timer_reg[24]/Q | level_inst/butterfly13/CLK                |
+| 72       | FDRE/Q          | None       | SLICE_X0Y50/AFF   | X0Y1         |           1 |               1 |              |       | level_inst/butterfly14/timer_reg[24]/Q | level_inst/butterfly14/CLK                |
+| 73       | FDRE/Q          | None       | SLICE_X4Y62/AFF   | X0Y1         |           1 |               1 |              |       | level_inst/butterfly15/timer_reg[24]/Q | level_inst/butterfly15/CLK                |
+| 74       | FDRE/Q          | None       | SLICE_X8Y61/AFF   | X0Y1         |           1 |               1 |              |       | level_inst/butterfly16/timer_reg[24]/Q | level_inst/butterfly16/CLK                |
+| 75       | FDRE/Q          | None       | SLICE_X37Y37/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/butterfly2/timer_reg[24]/Q  | level_inst/butterfly2/CLK                 |
+| 76       | FDRE/Q          | None       | SLICE_X34Y16/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/butterfly3/timer_reg[24]/Q  | level_inst/butterfly3/CLK                 |
+| 77       | FDRE/Q          | None       | SLICE_X32Y16/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/butterfly4/timer_reg[24]/Q  | level_inst/butterfly4/CLK                 |
+| 78       | FDRE/Q          | None       | SLICE_X8Y13/AFF   | X0Y0         |           1 |               1 |              |       | level_inst/butterfly5/timer_reg[24]/Q  | level_inst/butterfly5/CLK                 |
+| 79       | FDRE/Q          | None       | SLICE_X7Y17/AFF   | X0Y0         |           1 |               1 |              |       | level_inst/butterfly6/timer_reg[24]/Q  | level_inst/butterfly6/CLK                 |
+| 80       | FDRE/Q          | None       | SLICE_X15Y15/AFF  | X0Y0         |           1 |               1 |              |       | level_inst/butterfly7/timer_reg[24]/Q  | level_inst/butterfly7/CLK                 |
+| 81       | FDRE/Q          | None       | SLICE_X20Y17/AFF  | X0Y0         |           1 |               1 |              |       | level_inst/butterfly8/timer_reg[24]/Q  | level_inst/butterfly8/CLK                 |
+| 82       | FDRE/Q          | None       | SLICE_X35Y47/AFF  | X1Y0         |           1 |               1 |              |       | level_inst/butterfly9/timer_reg[24]/Q  | level_inst/butterfly9/CLK                 |
++----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------+-------------------------------------------+
+* Local Clocks in this context represents only clocks driven by non-global buffers
+** Clock Loads column represents the clock pin loads (pin count)
+*** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+5. Clock Regions: Key Resource Utilization
+------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E2   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  940 |  1100 |  352 |   400 |    5 |    20 |    5 |    10 |    0 |    20 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1110 |  1100 |  274 |   350 |    7 |    40 |   11 |    20 |    0 |    20 |
+| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  210 |  1100 |  108 |   400 |    0 |    20 |    4 |    10 |    0 |    20 |
+| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  260 |  1100 |   89 |   350 |    6 |    40 |    8 |    20 |    0 |    20 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+6. Clock Regions : Global Clock Summary
+---------------------------------------
+
++----+----+----+
+|    | X0 | X1 |
++----+----+----+
+| Y1 |  1 |  1 |
+| Y0 |  1 |  1 |
++----+----+----+
+
+
+7. Device Cell Placement Summary for Global Clock g0
+----------------------------------------------------
+
++-----------+-----------------+-------------------+-----------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock           | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                   |
++-----------+-----------------+-------------------+-----------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------+
+| g0        | BUFG/O          | n/a               | Clk75MHz_unbuff |      13.333 | {0.000 6.667} |        2415 |        0 |              0 |        0 | CLKTree_inst/Clk75MHz |
++-----------+-----------------+-------------------+-----------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------+
+* Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+-------+
+|    | X0   | X1    |
++----+------+-------+
+| Y1 |  201 |   242 |
+| Y0 |  912 |  1060 |
++----+------+-------+
+
+
+8. Clock Region Cell Placement per Global Clock: Region X0Y0
+------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                   |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+| g0        | n/a   | BUFG/O          | None       |         912 |               0 | 897 |      0 |   10 |   0 |  0 |    0 |   0 |       0 | CLKTree_inst/Clk75MHz |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+9. Clock Region Cell Placement per Global Clock: Region X1Y0
+------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                   |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------+
+| g0        | n/a   | BUFG/O          | None       |        1060 |               0 | 1035 |      0 |   18 |   0 |  0 |    0 |   0 |       0 | CLKTree_inst/Clk75MHz |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+10. Clock Region Cell Placement per Global Clock: Region X0Y1
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                   |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+| g0        | n/a   | BUFG/O          | None       |         201 |               0 | 196 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | CLKTree_inst/Clk75MHz |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+11. Clock Region Cell Placement per Global Clock: Region X1Y1
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                   |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+| g0        | n/a   | BUFG/O          | None       |         242 |               0 | 220 |      0 |   14 |   0 |  0 |    0 |   0 |       0 | CLKTree_inst/Clk75MHz |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y16 [get_cells CLKTree_inst/BUFG_inst]
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X0Y78 [get_ports clk]
+
+# Clock net "CLKTree_inst/Clk75MHz" driven by instance "CLKTree_inst/BUFG_inst" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock {CLKAG_CLKTree_inst/Clk75MHz}
+add_cells_to_pblock [get_pblocks  {CLKAG_CLKTree_inst/Clk75MHz}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="CLKTree_inst/Clk75MHz"}]]]
+resize_pblock [get_pblocks {CLKAG_CLKTree_inst/Clk75MHz}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup

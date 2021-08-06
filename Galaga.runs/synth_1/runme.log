@@ -1,0 +1,1291 @@
+
+*** Running vivado
+    with args -log Galaga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Galaga.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Galaga.tcl -notrace
+Command: synth_design -top Galaga -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9124 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 309.660 ; gain = 78.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Galaga' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/Galaga.v:23]
+INFO: [Synth 8-638] synthesizing module 'ClkTree' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ClkTree.v:23]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_BASE' [D:/Programme/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20879]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 30.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_BASE' (1#1) [D:/Programme/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20879]
+WARNING: [Synth 8-350] instance 'MMCME2_BASE_inst' of module 'MMCME2_BASE' requires 18 connections, but only 6 given [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ClkTree.v:38]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/Programme/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [D:/Programme/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'ClkTree' (3#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ClkTree.v:23]
+INFO: [Synth 8-638] synthesizing module 'VGA1024' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/VGA1024.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VGA1024' (4#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/VGA1024.v:23]
+INFO: [Synth 8-638] synthesizing module 'player' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:23]
+INFO: [Synth 8-638] synthesizing module 'ship' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:43]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:44]
+INFO: [Synth 8-3876] $readmem data file 'PlayerShipSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:46]
+INFO: [Synth 8-3876] $readmem data file 'PlayerDeadSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:47]
+INFO: [Synth 8-256] done synthesizing module 'ship' (5#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:23]
+INFO: [Synth 8-638] synthesizing module 'shoot' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:23]
+INFO: [Synth 8-3876] $readmem data file 'ShootSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:43]
+INFO: [Synth 8-256] done synthesizing module 'shoot' (6#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:23]
+INFO: [Synth 8-256] done synthesizing module 'player' (7#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:23]
+INFO: [Synth 8-638] synthesizing module 'score' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/score.v:23]
+INFO: [Synth 8-638] synthesizing module 'letter' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:23]
+INFO: [Synth 8-3876] $readmem data file 'LetterSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:38]
+INFO: [Synth 8-256] done synthesizing module 'letter' (8#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:23]
+INFO: [Synth 8-638] synthesizing module 'digit' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:23]
+INFO: [Synth 8-3876] $readmem data file 'DigitSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:38]
+INFO: [Synth 8-256] done synthesizing module 'digit' (9#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'score' (10#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/score.v:23]
+INFO: [Synth 8-638] synthesizing module 'life' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/life.v:23]
+INFO: [Synth 8-3876] $readmem data file 'LifeShipSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/life.v:34]
+INFO: [Synth 8-256] done synthesizing module 'life' (11#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/life.v:23]
+INFO: [Synth 8-638] synthesizing module 'background' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'background' (12#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/background.v:23]
+INFO: [Synth 8-638] synthesizing module 'level' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:23]
+WARNING: [Synth 8-387] label required on module instance [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:130]
+INFO: [Synth 8-638] synthesizing module 'enemy_movement' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemy_movement.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemy_movement.v:49]
+INFO: [Synth 8-256] done synthesizing module 'enemy_movement' (13#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemy_movement.v:23]
+INFO: [Synth 8-638] synthesizing module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:41]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:42]
+INFO: [Synth 8-3876] $readmem data file 'EnemyBossSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:50]
+INFO: [Synth 8-3876] $readmem data file 'EnemyDeadSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:51]
+INFO: [Synth 8-638] synthesizing module 'enemyshoot' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:23]
+INFO: [Synth 8-3876] $readmem data file 'EnemyShootSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:43]
+INFO: [Synth 8-256] done synthesizing module 'enemyshoot' (14#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:23]
+INFO: [Synth 8-256] done synthesizing module 'boss' (15#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:132]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:132]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:133]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:133]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:134]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:134]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:135]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'boss' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:135]
+INFO: [Synth 8-638] synthesizing module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:41]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:42]
+INFO: [Synth 8-3876] $readmem data file 'EnemyButterflySprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:50]
+INFO: [Synth 8-3876] $readmem data file 'EnemyDeadSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:51]
+INFO: [Synth 8-256] done synthesizing module 'butterfly' (16#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:137]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:137]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:138]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:138]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:139]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:139]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:140]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:140]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:141]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:141]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:142]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:142]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:143]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:143]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:144]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:144]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:145]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:145]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:146]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:146]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:147]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:147]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:148]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:148]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:149]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:149]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:150]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:150]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:151]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:151]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:152]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'butterfly' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:152]
+INFO: [Synth 8-638] synthesizing module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:41]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:42]
+INFO: [Synth 8-3876] $readmem data file 'EnemyBeeSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:49]
+INFO: [Synth 8-3876] $readmem data file 'EnemyDeadSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:50]
+INFO: [Synth 8-256] done synthesizing module 'bee' (17#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:154]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:154]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:155]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:155]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:156]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:156]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:157]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:157]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:158]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:158]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:159]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:159]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:160]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:160]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:161]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:161]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:162]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:162]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:163]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:163]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:164]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:164]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:165]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:165]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:166]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:166]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:167]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:167]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:168]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:168]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:169]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:169]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:170]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:170]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:171]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:171]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:172]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:172]
+WARNING: [Synth 8-689] width (32) of port connection 'Xmove' does not match port width (11) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:173]
+WARNING: [Synth 8-689] width (32) of port connection 'Ymove' does not match port width (10) of module 'bee' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:173]
+INFO: [Synth 8-256] done synthesizing module 'level' (18#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:23]
+INFO: [Synth 8-638] synthesizing module 'RGB_Converter' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/RGB_Converter.v:23]
+WARNING: [Synth 8-567] referenced signal 'RGB4bit' should be on the sensitivity list [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/RGB_Converter.v:29]
+INFO: [Synth 8-256] done synthesizing module 'RGB_Converter' (19#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/RGB_Converter.v:23]
+INFO: [Synth 8-638] synthesizing module 'ebene' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:38]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:39]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:40]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:41]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:42]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:43]
+INFO: [Synth 8-3876] $readmem data file 'lvl1.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:52]
+INFO: [Synth 8-3876] $readmem data file 'lvl5.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:53]
+INFO: [Synth 8-3876] $readmem data file 'lvl10.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:54]
+INFO: [Synth 8-3876] $readmem data file 'lvl20.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:55]
+INFO: [Synth 8-3876] $readmem data file 'lvl30.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:56]
+INFO: [Synth 8-3876] $readmem data file 'lvl50.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:57]
+INFO: [Synth 8-256] done synthesizing module 'ebene' (20#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:23]
+INFO: [Synth 8-638] synthesizing module 'menu' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "Block" *) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:51]
+INFO: [Synth 8-3876] $readmem data file 'LogoSprite.txt' is read successfully [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:52]
+WARNING: [Synth 8-689] width (32) of port connection 'i' does not match port width (6) of module 'letter' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:71]
+WARNING: [Synth 8-689] width (32) of port connection 'i' does not match port width (6) of module 'letter' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:72]
+WARNING: [Synth 8-689] width (32) of port connection 'i' does not match port width (6) of module 'letter' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:73]
+WARNING: [Synth 8-689] width (32) of port connection 'i' does not match port width (6) of module 'letter' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:74]
+WARNING: [Synth 8-689] width (32) of port connection 'i' does not match port width (6) of module 'letter' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:75]
+INFO: [Synth 8-256] done synthesizing module 'menu' (21#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Galaga' (22#1) [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/Galaga.v:23]
+WARNING: [Synth 8-3331] design letter has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design letter has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design letter has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design letter has unconnected port VGA_Ctrl[21]
+WARNING: [Synth 8-3331] design letter has unconnected port VGA_Ctrl[12]
+WARNING: [Synth 8-3331] design letter has unconnected port VGA_Ctrl[11]
+WARNING: [Synth 8-3331] design letter has unconnected port VGA_Ctrl[2]
+WARNING: [Synth 8-3331] design letter has unconnected port VGA_Ctrl[1]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[21]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[12]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[11]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[2]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[1]
+WARNING: [Synth 8-3331] design RGB_Converter has unconnected port clk
+WARNING: [Synth 8-3331] design enemyshoot has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design enemyshoot has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design enemyshoot has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design enemyshoot has unconnected port X[10]
+WARNING: [Synth 8-3331] design enemy_movement has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design enemy_movement has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design enemy_movement has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design background has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design background has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design background has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design background has unconnected port btn[3]
+WARNING: [Synth 8-3331] design background has unconnected port btn[2]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[21]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[12]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[11]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[2]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[1]
+WARNING: [Synth 8-3331] design digit has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design digit has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design digit has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design digit has unconnected port VGA_Ctrl[21]
+WARNING: [Synth 8-3331] design digit has unconnected port VGA_Ctrl[12]
+WARNING: [Synth 8-3331] design digit has unconnected port VGA_Ctrl[11]
+WARNING: [Synth 8-3331] design digit has unconnected port VGA_Ctrl[2]
+WARNING: [Synth 8-3331] design digit has unconnected port VGA_Ctrl[1]
+WARNING: [Synth 8-3331] design shoot has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design shoot has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design shoot has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design ship has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design ship has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design ship has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design ship has unconnected port VGA_Ctrl[21]
+WARNING: [Synth 8-3331] design ship has unconnected port Xmove[10]
+WARNING: [Synth 8-3331] design ship has unconnected port state[1]
+WARNING: [Synth 8-3331] design player has unconnected port btn[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 397.891 ; gain = 166.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 397.891 ; gain = 166.723
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/constrs_1/imports/Master Datei/ZYBO_Master.xdc]
+Finished Parsing XDC File [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/constrs_1/imports/Master Datei/ZYBO_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/constrs_1/imports/Master Datei/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Galaga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Galaga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 710.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 710.578 ; gain = 479.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 710.578 ; gain = 479.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 710.578 ; gain = 479.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "PixY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5547] Trying to map ROM "playership" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "deadship" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element playerRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:51]
+WARNING: [Synth 8-6014] Unused sequential element deadRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:52]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'X_reg' and it is trimmed from '11' to '10' bits. [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:39]
+INFO: [Synth 8-5546] ROM "action" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bullet" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Y_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:40]
+INFO: [Synth 8-5544] ROM "dead" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element Xmove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:56]
+WARNING: [Synth 8-6014] Unused sequential element shoottime_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:66]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:70]
+WARNING: [Synth 8-6014] Unused sequential element row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:41]
+WARNING: [Synth 8-6014] Unused sequential element row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:41]
+WARNING: [Synth 8-6014] Unused sequential element newpoint_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/score.v:50]
+WARNING: [Synth 8-6014] Unused sequential element ten_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/score.v:51]
+INFO: [Synth 8-5546] ROM "life" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/background.v:49]
+WARNING: [Synth 8-6014] Unused sequential element Xmove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/background.v:39]
+WARNING: [Synth 8-6014] Unused sequential element Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/background.v:36]
+INFO: [Synth 8-5544] ROM "phase" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bullet" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+INFO: [Synth 8-5547] Trying to map ROM "boss" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "deadboss" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element bossRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:57]
+WARNING: [Synth 8-6014] Unused sequential element deadRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:58]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:59]
+INFO: [Synth 8-5547] Trying to map ROM "butterfly" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "deadbutterfly" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element butterflyRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:57]
+WARNING: [Synth 8-6014] Unused sequential element deadRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:58]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+INFO: [Synth 8-5547] Trying to map ROM "bee" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "deadbee" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element beeRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:56]
+WARNING: [Synth 8-6014] Unused sequential element deadRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:57]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:58]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:251]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:251]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:251]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:251]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:252]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:252]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:252]
+INFO: [Synth 8-5545] ROM "timer2" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "dead" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element oldpoint_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:187]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:251]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:179]
+WARNING: [Synth 8-6014] Unused sequential element timer2_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:182]
+WARNING: [Synth 8-6014] Unused sequential element ebene_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/level.v:186]
+INFO: [Synth 8-5547] Trying to map ROM "level1" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "level5" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "level10" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "level20" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "level30" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "level50" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element stage1RGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:61]
+WARNING: [Synth 8-6014] Unused sequential element stage2RGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:62]
+WARNING: [Synth 8-6014] Unused sequential element stage3RGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:63]
+WARNING: [Synth 8-6014] Unused sequential element stage4RGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:64]
+WARNING: [Synth 8-6014] Unused sequential element stage5RGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:65]
+WARNING: [Synth 8-6014] Unused sequential element stage6RGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ebene.v:66]
+INFO: [Synth 8-5544] ROM "i0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5547] Trying to map ROM "logo" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element logoRGB_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/menu.v:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 710.578 ; gain = 479.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     12 Bit       Adders := 15    
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 43    
+	   4 Input     10 Bit       Adders := 124   
+	   3 Input     10 Bit       Adders := 42    
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 9     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	  20 Input      5 Bit       Adders := 1     
+	  16 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 41    
+	   4 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 40    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               40 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 85    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 25    
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 139   
+	                3 Bit    Registers := 42    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 95    
++---Multipliers : 
+	                 2x32  Multipliers := 1     
+	                 3x32  Multipliers := 1     
++---ROMs : 
+	                              ROMs := 114   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 51    
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 12    
+	   4 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 232   
+	 257 Input      4 Bit        Muxes := 43    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module VGA1024 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ship 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module shoot 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	 257 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+Module letter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module digit 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module score 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 6     
++---Registers : 
+	                4 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 16    
+Module life 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	 257 Input      4 Bit        Muxes := 1     
+Module background 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 9     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module enemy_movement 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 10    
+	   4 Input     11 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   4 Input      1 Bit        Muxes := 6     
+Module enemyshoot 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	 257 Input      4 Bit        Muxes := 1     
+Module boss 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module butterfly 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module bee 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module level 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     12 Bit       Adders := 15    
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	  20 Input      5 Bit       Adders := 1     
+	  16 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   4 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               40 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 2x32  Multipliers := 1     
+	                 3x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 51    
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 82    
+	   2 Input      1 Bit        Muxes := 1     
+Module ebene 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 6     
++---ROMs : 
+	                              ROMs := 6     
+Module menu 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "dead" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element shoot1/Y_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element shoot2/Y_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:70]
+WARNING: [Synth 8-6014] Unused sequential element Xmove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:56]
+WARNING: [Synth 8-6014] Unused sequential element shoottime_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:66]
+INFO: [Synth 8-5546] ROM "PixY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'ship1/deadanimation_reg[2:0]' into 'ship1/deadanimation_reg[2:0]' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:58]
+WARNING: [Synth 8-6014] Unused sequential element ship1/deadanimation_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:58]
+WARNING: [Synth 8-6014] Unused sequential element ship1/timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/ship.v:53]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:70]
+WARNING: [Synth 8-6014] Unused sequential element Xmove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:56]
+WARNING: [Synth 8-6014] Unused sequential element shoottime_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/player.v:66]
+WARNING: [Synth 8-6014] Unused sequential element shoot2/Y_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element shoot1/Y_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/shoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element letterS/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:41]
+WARNING: [Synth 8-6014] Unused sequential element letterC/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:41]
+WARNING: [Synth 8-6014] Unused sequential element letterO/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:41]
+WARNING: [Synth 8-6014] Unused sequential element letterR/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:41]
+WARNING: [Synth 8-6014] Unused sequential element letterE/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/letter.v:41]
+WARNING: [Synth 8-6014] Unused sequential element digit0/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:41]
+WARNING: [Synth 8-6014] Unused sequential element digit1/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:41]
+WARNING: [Synth 8-6014] Unused sequential element digit2/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:41]
+WARNING: [Synth 8-6014] Unused sequential element digit3/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:41]
+WARNING: [Synth 8-6014] Unused sequential element digit4/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:41]
+WARNING: [Synth 8-6014] Unused sequential element digit5/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:41]
+WARNING: [Synth 8-6014] Unused sequential element digit6/row_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/digit.v:41]
+WARNING: [Synth 8-6014] Unused sequential element newpoint_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/score.v:50]
+WARNING: [Synth 8-6014] Unused sequential element ten_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/score.v:51]
+WARNING: [Synth 8-6014] Unused sequential element Xmove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/background.v:39]
+WARNING: [Synth 8-6014] Unused sequential element Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/background.v:36]
+INFO: [Synth 8-4471] merging register 'animation_reg' into 'animation_reg' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:69]
+INFO: [Synth 8-4471] merging register 'deadanimation_reg[2:0]' into 'deadanimation_reg[2:0]' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:64]
+WARNING: [Synth 8-6014] Unused sequential element animation_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:69]
+WARNING: [Synth 8-6014] Unused sequential element deadanimation_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:64]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/boss.v:59]
+INFO: [Synth 8-4471] merging register 'animation_reg' into 'animation_reg' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:69]
+INFO: [Synth 8-4471] merging register 'deadanimation_reg[2:0]' into 'deadanimation_reg[2:0]' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:64]
+WARNING: [Synth 8-6014] Unused sequential element animation_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:69]
+WARNING: [Synth 8-6014] Unused sequential element deadanimation_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:64]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/butterfly.v:59]
+WARNING: [Synth 8-6014] Unused sequential element enemyshoot_inst/Ymove_reg was removed.  [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/enemyshoot.v:40]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'animation_reg' into 'animation_reg' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:68]
+INFO: [Synth 8-4471] merging register 'deadanimation_reg[2:0]' into 'deadanimation_reg[2:0]' [D:/Users/Glaciens/ZYBO/Galaga/Galaga.srcs/sources_1/new/bee.v:63]
+INFO: [Synth 8-5545] ROM "timer2" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design menu has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design menu has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design menu has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design menu has unconnected port VGA_Ctrl[21]
+WARNING: [Synth 8-3331] design menu has unconnected port VGA_Ctrl[12]
+WARNING: [Synth 8-3331] design menu has unconnected port VGA_Ctrl[11]
+WARNING: [Synth 8-3331] design menu has unconnected port VGA_Ctrl[2]
+WARNING: [Synth 8-3331] design menu has unconnected port VGA_Ctrl[1]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[21]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[12]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[11]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[2]
+WARNING: [Synth 8-3331] design ebene has unconnected port VGA_Ctrl[1]
+WARNING: [Synth 8-3331] design RGB_Converter has unconnected port clk
+WARNING: [Synth 8-3331] design bee has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design bee has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design bee has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design bee has unconnected port Xmove[10]
+WARNING: [Synth 8-3331] design butterfly has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design butterfly has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design butterfly has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design butterfly has unconnected port Xmove[10]
+WARNING: [Synth 8-3331] design boss has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design boss has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design boss has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design boss has unconnected port Xmove[10]
+WARNING: [Synth 8-3331] design enemy_movement has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design enemy_movement has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design enemy_movement has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design background has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design background has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design background has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design background has unconnected port btn[3]
+WARNING: [Synth 8-3331] design background has unconnected port btn[2]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[24]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[23]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[22]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[21]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[12]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[11]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[2]
+WARNING: [Synth 8-3331] design life has unconnected port VGA_Ctrl[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\player_inst/shoot2/Y0_inferred__0 /\player_inst/shoot2/Y_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\player_inst/shoot1/Y0_inferred__0 /\player_inst/shoot1/Y_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (bee:/\enemyshoot_inst/Ymove0_inferred__0 /\enemyshoot_inst/Ymove_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (butterfly:/\enemyshoot_inst/Ymove0_inferred__0 /\enemyshoot_inst/Ymove_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (boss:/\enemyshoot_inst/Ymove0_inferred__0 /\enemyshoot_inst/Ymove_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\life_inst/RGB_reg[3] )
+INFO: [Synth 8-3886] merging instance 'level_inst/oldpoint_reg[20]' (FDRE) to 'level_inst/A[2]'
+INFO: [Synth 8-3886] merging instance 'level_inst/oldpoint_reg[18]' (FDRE) to 'level_inst/A[0]'
+INFO: [Synth 8-3886] merging instance 'level_inst/oldpoint_reg[19]' (FDRE) to 'level_inst/A[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\player_inst/shoot2/RGB_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\player_inst/shoot1/RGB_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (player_inst/shoot1/RGB_reg[3]) is unused and will be removed from module Galaga.
+WARNING: [Synth 8-3332] Sequential element (player_inst/shoot2/Y_reg[0]) is unused and will be removed from module Galaga.
+WARNING: [Synth 8-3332] Sequential element (player_inst/shoot2/RGB_reg[3]) is unused and will be removed from module Galaga.
+WARNING: [Synth 8-3332] Sequential element (player_inst/shoot1/Y_reg[0]) is unused and will be removed from module Galaga.
+WARNING: [Synth 8-3332] Sequential element (life_inst/RGB_reg[3]) is unused and will be removed from module Galaga.
+WARNING: [Synth 8-3332] Sequential element (enemyshoot_inst/Ymove_reg[0]) is unused and will be removed from module boss.
+WARNING: [Synth 8-3332] Sequential element (enemyshoot_inst/Ymove_reg[0]) is unused and will be removed from module butterfly.
+WARNING: [Synth 8-3332] Sequential element (enemyshoot_inst/Ymove_reg[0]) is unused and will be removed from module bee.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:22 ; elapsed = 00:02:30 . Memory (MB): peak = 767.125 ; gain = 535.957
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 169, Available = 120. Will try to implement using LUT-RAM. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------------+---------------+----------------+
+|Module Name | RTL Object       | Depth x Width | Implemented As | 
++------------+------------------+---------------+----------------+
+|ship        | deadRGB_reg      | 4096x4        | Block RAM      | 
+|ship        | playerRGB_reg    | 256x4         | Block RAM      | 
+|letter      | row_reg          | 256x8         | Block RAM      | 
+|digit       | row_reg          | 128x8         | Block RAM      | 
+|boss        | bossRGB_reg      | 512x4         | Block RAM      | 
+|boss        | deadRGB_reg      | 8192x4        | Block RAM      | 
+|butterfly   | butterflyRGB_reg | 512x4         | Block RAM      | 
+|butterfly   | deadRGB_reg      | 8192x4        | Block RAM      | 
+|bee         | beeRGB_reg       | 512x4         | Block RAM      | 
+|bee         | deadRGB_reg      | 8192x4        | Block RAM      | 
+|ebene       | stage1RGB_reg    | 128x4         | Block RAM      | 
+|ebene       | stage2RGB_reg    | 128x4         | Block RAM      | 
+|ebene       | stage3RGB_reg    | 256x4         | Block RAM      | 
+|ebene       | stage4RGB_reg    | 256x4         | Block RAM      | 
+|ebene       | stage5RGB_reg    | 256x4         | Block RAM      | 
+|ebene       | stage6RGB_reg    | 256x4         | Block RAM      | 
+|menu        | logoRGB_reg      | 65536x4       | Block RAM      | 
+|score       | letterS/row_reg  | 256x8         | Block RAM      | 
+|score       | letterC/row_reg  | 256x8         | Block RAM      | 
+|score       | letterO/row_reg  | 256x8         | Block RAM      | 
+|score       | letterR/row_reg  | 256x8         | Block RAM      | 
+|score       | letterE/row_reg  | 256x8         | Block RAM      | 
+|score       | digit0/row_reg   | 128x8         | Block RAM      | 
+|score       | digit1/row_reg   | 128x8         | Block RAM      | 
+|score       | digit2/row_reg   | 128x8         | Block RAM      | 
+|score       | digit3/row_reg   | 128x8         | Block RAM      | 
+|score       | digit4/row_reg   | 128x8         | Block RAM      | 
+|score       | digit5/row_reg   | 128x8         | Block RAM      | 
+|score       | digit6/row_reg   | 128x8         | Block RAM      | 
+|menu        | letterS/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterT/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterA/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterR/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterT2/row_reg | 256x8         | Block RAM      | 
+|menu        | letterG/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterA2/row_reg | 256x8         | Block RAM      | 
+|menu        | letterM/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterE/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterO/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterV/row_reg  | 256x8         | Block RAM      | 
+|menu        | letterE2/row_reg | 256x8         | Block RAM      | 
+|menu        | letterR2/row_reg | 256x8         | Block RAM      | 
++------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:42 ; elapsed = 00:02:50 . Memory (MB): peak = 895.059 ; gain = 663.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:26 ; elapsed = 00:05:37 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'score_inst/letterE/row_reg' (RAMB18E1_2) to 'menu_inst/letterE/row_reg'
+INFO: [Synth 8-223] decloning instance 'score_inst/letterO/row_reg' (RAMB18E1_2) to 'menu_inst/letterO/row_reg'
+INFO: [Synth 8-223] decloning instance 'menu_inst/letterE/row_reg' (RAMB18E1_2) to 'menu_inst/letterE2/row_reg'
+INFO: [Synth 8-223] decloning instance 'score_inst/letterR/row_reg' (RAMB18E1_2) to 'menu_inst/letterR2/row_reg'
+INFO: [Synth 8-4480] The timing for the instance player_inst/ship1/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance player_inst/ship1/playerRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/letterS/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/letterS/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/digit0/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/digit0/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/digit2/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/digit2/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/digit4/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/digit4/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance score_inst/digit6/row_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/boss1/bossRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/boss1/bossRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/boss1/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/boss1/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/boss3/bossRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/boss3/bossRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/boss3/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/boss3/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly1/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly1/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly1/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly1/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly3/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly3/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly3/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly3/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly5/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly5/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly5/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly5/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly7/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly7/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly7/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly7/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly9/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly9/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly9/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly9/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly11/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly11/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly11/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly11/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly13/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly13/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly13/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly13/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly15/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly15/butterflyRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly15/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/butterfly15/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee1/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee1/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee1/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee1/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee3/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee3/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee3/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee3/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee5/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee5/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee5/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee5/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee7/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee7/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee7/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee7/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee9/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee9/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee9/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee9/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee11/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee11/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee11/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee11/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee13/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee13/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee13/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee13/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee15/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee15/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee15/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee15/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee17/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee17/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee17/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee17/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee19/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee19/beeRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee19/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance level_inst/bee19/deadRGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ebene_inst/stage1RGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ebene_inst/stage2RGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ebene_inst/stage3RGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ebene_inst/stage4RGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ebene_inst/stage5RGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ebene_inst/stage6RGB_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance menu_inst/logoRGB_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance menu_inst/logoRGB_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance menu_inst/logoRGB_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:35 ; elapsed = 00:05:46 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:38 ; elapsed = 00:05:49 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:38 ; elapsed = 00:05:49 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:41 ; elapsed = 00:05:52 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:41 ; elapsed = 00:05:52 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:41 ; elapsed = 00:05:53 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:41 ; elapsed = 00:05:53 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |CARRY4      |   848|
+|3     |LUT1        |  1254|
+|4     |LUT2        |   901|
+|5     |LUT3        |   771|
+|6     |LUT4        |  1021|
+|7     |LUT5        |  1067|
+|8     |LUT6        |  1568|
+|9     |MMCME2_BASE |     1|
+|10    |MUXF7       |    26|
+|11    |RAMB18E1    |     1|
+|12    |RAMB18E1_1  |     1|
+|13    |RAMB18E1_10 |     1|
+|14    |RAMB18E1_11 |     1|
+|15    |RAMB18E1_12 |     1|
+|16    |RAMB18E1_2  |     7|
+|17    |RAMB18E1_3  |     4|
+|18    |RAMB18E1_4  |     2|
+|19    |RAMB18E1_5  |     8|
+|20    |RAMB18E1_6  |    10|
+|21    |RAMB18E1_7  |     1|
+|22    |RAMB18E1_8  |     1|
+|23    |RAMB18E1_9  |     1|
+|24    |RAMB36E1    |    20|
+|25    |RAMB36E1_1  |     1|
+|26    |RAMB36E1_2  |     1|
+|27    |RAMB36E1_3  |     1|
+|28    |RAMB36E1_4  |     1|
+|29    |RAMB36E1_5  |     1|
+|30    |RAMB36E1_6  |     1|
+|31    |RAMB36E1_7  |     1|
+|32    |RAMB36E1_8  |     1|
+|33    |FDRE        |  2516|
+|34    |FDSE        |     4|
+|35    |IBUF        |     5|
+|36    |OBUF        |    18|
++------+------------+------+
+
+Report Instance Areas: 
++------+----------------------+---------------+------+
+|      |Instance              |Module         |Cells |
++------+----------------------+---------------+------+
+|1     |top                   |               | 10068|
+|2     |  CLKTree_inst        |ClkTree        |     2|
+|3     |  VGA1024_inst        |VGA1024        |  1084|
+|4     |  background_inst     |background     |    87|
+|5     |  ebene_inst          |ebene          |    26|
+|6     |  level_inst          |level          |  8206|
+|7     |    bee1              |bee            |   129|
+|8     |      enemyshoot_inst |enemyshoot_85  |    48|
+|9     |    bee10             |bee_10         |   126|
+|10    |      enemyshoot_inst |enemyshoot_84  |    50|
+|11    |    bee11             |bee_11         |   121|
+|12    |      enemyshoot_inst |enemyshoot_83  |    47|
+|13    |    bee12             |bee_12         |   128|
+|14    |      enemyshoot_inst |enemyshoot_82  |    55|
+|15    |    bee13             |bee_13         |   126|
+|16    |      enemyshoot_inst |enemyshoot_81  |    47|
+|17    |    bee14             |bee_14         |   126|
+|18    |      enemyshoot_inst |enemyshoot_80  |    48|
+|19    |    bee15             |bee_15         |   132|
+|20    |      enemyshoot_inst |enemyshoot_79  |    48|
+|21    |    bee16             |bee_16         |   128|
+|22    |      enemyshoot_inst |enemyshoot_78  |    54|
+|23    |    bee17             |bee_17         |   134|
+|24    |      enemyshoot_inst |enemyshoot_77  |    53|
+|25    |    bee18             |bee_18         |   131|
+|26    |      enemyshoot_inst |enemyshoot_76  |    57|
+|27    |    bee19             |bee_19         |   132|
+|28    |      enemyshoot_inst |enemyshoot_75  |    48|
+|29    |    bee2              |bee_20         |   127|
+|30    |      enemyshoot_inst |enemyshoot_74  |    52|
+|31    |    bee20             |bee_21         |   126|
+|32    |      enemyshoot_inst |enemyshoot_73  |    49|
+|33    |    bee3              |bee_22         |   123|
+|34    |      enemyshoot_inst |enemyshoot_72  |    47|
+|35    |    bee4              |bee_23         |   127|
+|36    |      enemyshoot_inst |enemyshoot_71  |    50|
+|37    |    bee5              |bee_24         |   126|
+|38    |      enemyshoot_inst |enemyshoot_70  |    50|
+|39    |    bee6              |bee_25         |   128|
+|40    |      enemyshoot_inst |enemyshoot_69  |    52|
+|41    |    bee7              |bee_26         |   133|
+|42    |      enemyshoot_inst |enemyshoot_68  |    49|
+|43    |    bee8              |bee_27         |   126|
+|44    |      enemyshoot_inst |enemyshoot_67  |    50|
+|45    |    bee9              |bee_28         |   138|
+|46    |      enemyshoot_inst |enemyshoot_66  |    53|
+|47    |    boss1             |boss           |   132|
+|48    |      enemyshoot_inst |enemyshoot_65  |    49|
+|49    |    boss2             |boss_29        |   119|
+|50    |      enemyshoot_inst |enemyshoot_64  |    47|
+|51    |    boss3             |boss_30        |   128|
+|52    |      enemyshoot_inst |enemyshoot_63  |    53|
+|53    |    boss4             |boss_31        |   119|
+|54    |      enemyshoot_inst |enemyshoot_62  |    47|
+|55    |    butterfly1        |butterfly      |   129|
+|56    |      enemyshoot_inst |enemyshoot_61  |    52|
+|57    |    butterfly10       |butterfly_32   |   121|
+|58    |      enemyshoot_inst |enemyshoot_60  |    48|
+|59    |    butterfly11       |butterfly_33   |   122|
+|60    |      enemyshoot_inst |enemyshoot_59  |    48|
+|61    |    butterfly12       |butterfly_34   |   128|
+|62    |      enemyshoot_inst |enemyshoot_58  |    47|
+|63    |    butterfly13       |butterfly_35   |   131|
+|64    |      enemyshoot_inst |enemyshoot_57  |    53|
+|65    |    butterfly14       |butterfly_36   |   124|
+|66    |      enemyshoot_inst |enemyshoot_56  |    48|
+|67    |    butterfly15       |butterfly_37   |   129|
+|68    |      enemyshoot_inst |enemyshoot_55  |    53|
+|69    |    butterfly16       |butterfly_38   |   125|
+|70    |      enemyshoot_inst |enemyshoot_54  |    52|
+|71    |    butterfly2        |butterfly_39   |   120|
+|72    |      enemyshoot_inst |enemyshoot_53  |    47|
+|73    |    butterfly3        |butterfly_40   |   137|
+|74    |      enemyshoot_inst |enemyshoot_52  |    53|
+|75    |    butterfly4        |butterfly_41   |   122|
+|76    |      enemyshoot_inst |enemyshoot_51  |    47|
+|77    |    butterfly5        |butterfly_42   |   135|
+|78    |      enemyshoot_inst |enemyshoot_50  |    57|
+|79    |    butterfly6        |butterfly_43   |   130|
+|80    |      enemyshoot_inst |enemyshoot_49  |    48|
+|81    |    butterfly7        |butterfly_44   |   124|
+|82    |      enemyshoot_inst |enemyshoot_48  |    50|
+|83    |    butterfly8        |butterfly_45   |   120|
+|84    |      enemyshoot_inst |enemyshoot_47  |    48|
+|85    |    butterfly9        |butterfly_46   |   129|
+|86    |      enemyshoot_inst |enemyshoot     |    54|
+|87    |    nolabel_line130   |enemy_movement |  2797|
+|88    |  life_inst           |life           |     5|
+|89    |  menu_inst           |menu           |   174|
+|90    |    letterA           |letter_4       |     8|
+|91    |    letterA2          |letter_5       |     7|
+|92    |    letterE2          |letter_6       |    16|
+|93    |    letterO           |letter_7       |    10|
+|94    |    letterS           |letter_8       |     8|
+|95    |    letterT2          |letter_9       |     7|
+|96    |  player_inst         |player         |   316|
+|97    |    ship1             |ship           |    82|
+|98    |    shoot1            |shoot          |   102|
+|99    |    shoot2            |shoot_3        |    58|
+|100   |  score_inst          |score          |   143|
+|101   |    digit0            |digit          |     6|
+|102   |    digit2            |digit_0        |     5|
+|103   |    digit4            |digit_1        |     6|
+|104   |    digit6            |digit_2        |     3|
+|105   |    letterS           |letter         |     7|
++------+----------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:42 ; elapsed = 00:05:53 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 227 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:17 ; elapsed = 00:05:35 . Memory (MB): peak = 1430.109 ; gain = 886.254
+Synthesis Optimization Complete : Time (s): cpu = 00:05:42 ; elapsed = 00:05:53 . Memory (MB): peak = 1430.109 ; gain = 1198.941
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 921 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+259 Infos, 298 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:56 ; elapsed = 00:06:09 . Memory (MB): peak = 1430.109 ; gain = 1206.707
+INFO: [Common 17-1381] The checkpoint 'D:/Users/Glaciens/ZYBO/Galaga/Galaga.runs/synth_1/Galaga.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.539 . Memory (MB): peak = 1430.109 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 21 00:47:36 2018...

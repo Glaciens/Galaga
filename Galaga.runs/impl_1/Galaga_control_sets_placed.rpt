@@ -1,0 +1,308 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sat Jul 21 00:50:16 2018
+| Host         : Acer-Aspire running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Galaga_control_sets_placed.rpt
+| Design       : Galaga
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   237 |
+| Unused register locations in slices containing registers |  1288 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1158 |          399 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             211 |           89 |
+| Yes          | No                    | No                     |             513 |          189 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             638 |          229 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+--------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|                Clock Signal                |                   Enable Signal                  |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++--------------------------------------------+--------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|  level_inst/boss3/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/boss4/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly13/CLK                |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee9/CLK                       |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee8/CLK                       |                                                  |                                                             |                1 |              1 |
+|  level_inst/boss2/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/boss1/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee3/CLK                       |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee20/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee7/CLK                       |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee6/CLK                       |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee16/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee15/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee4/CLK                       |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee18/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly16/CLK                |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee5/CLK                       |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee12/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee17/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee2/CLK                       |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly15/CLK                |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee10/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee11/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee19/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee14/CLK                      |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee13/CLK                      |                                                  |                                                             |                1 |              1 |
+|  player_inst/ship1/CLK                     |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly14/CLK                |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly9/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly8/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly7/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly6/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly3/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly2/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly5/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly4/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly10/CLK                |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly1/CLK                 |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly12/CLK                |                                                  |                                                             |                1 |              1 |
+|  level_inst/butterfly11/CLK                |                                                  |                                                             |                1 |              1 |
+|  level_inst/bee1/CLK                       |                                                  |                                                             |                1 |              1 |
+|  player_inst/ship1/CLK                     | player_inst/ship1/deadanimation0                 | player_inst/ship1/Xmove3                                    |                1 |              2 |
+|  menu_inst/buffer                          |                                                  |                                                             |                1 |              2 |
+|  level_inst/bee15/timer_reg_n_0_[23]       | level_inst/bee15/deadanimation0                  | level_inst/bee15/deadanimation[2]_i_1__33_n_0               |                1 |              3 |
+|  level_inst/bee16/timer_reg_n_0_[23]       | level_inst/bee16/deadanimation0                  | level_inst/bee16/deadanimation[2]_i_1__34_n_0               |                1 |              3 |
+|  level_inst/bee6/timer_reg_n_0_[23]        | level_inst/bee6/deadanimation0                   | level_inst/bee6/deadanimation[2]_i_1__24_n_0                |                1 |              3 |
+|  level_inst/bee7/timer_reg_n_0_[23]        | level_inst/bee7/deadanimation0                   | level_inst/bee7/deadanimation[2]_i_1__25_n_0                |                1 |              3 |
+|  level_inst/bee2/timer_reg_n_0_[23]        | level_inst/bee2/deadanimation0                   | level_inst/bee2/deadanimation[2]_i_1__20_n_0                |                1 |              3 |
+|  level_inst/bee20/timer_reg_n_0_[23]       | level_inst/bee20/deadanimation0                  | level_inst/bee20/deadanimation[2]_i_1__38_n_0               |                1 |              3 |
+|  level_inst/bee3/timer_reg_n_0_[23]        | level_inst/bee3/deadanimation0                   | level_inst/bee3/deadanimation[2]_i_1__21_n_0                |                1 |              3 |
+|  level_inst/boss1/timer_reg_n_0_[23]       | level_inst/boss1/deadanimation0                  | level_inst/boss1/deadanimation[2]_i_1_n_0                   |                1 |              3 |
+|  level_inst/boss2/timer_reg_n_0_[23]       | level_inst/boss2/deadanimation0                  | level_inst/boss2/deadanimation[2]_i_1__0_n_0                |                1 |              3 |
+|  level_inst/bee8/timer_reg_n_0_[23]        | level_inst/bee8/deadanimation0                   | level_inst/bee8/deadanimation[2]_i_1__26_n_0                |                1 |              3 |
+|  level_inst/bee9/timer_reg_n_0_[23]        | level_inst/bee9/deadanimation0                   | level_inst/bee9/deadanimation[2]_i_1__27_n_0                |                1 |              3 |
+|  level_inst/butterfly13/timer_reg_n_0_[23] | level_inst/butterfly13/deadanimation0            | level_inst/butterfly13/deadanimation[2]_i_1__15_n_0         |                1 |              3 |
+|  level_inst/butterfly14/timer_reg_n_0_[23] | level_inst/butterfly14/deadanimation0            | level_inst/butterfly14/deadanimation[2]_i_1__16_n_0         |                1 |              3 |
+|  level_inst/butterfly11/timer_reg_n_0_[23] | level_inst/butterfly11/deadanimation0            | level_inst/butterfly11/deadanimation[2]_i_1__13_n_0         |                1 |              3 |
+|  level_inst/butterfly12/timer_reg_n_0_[23] | level_inst/butterfly12/deadanimation0            | level_inst/butterfly12/deadanimation[2]_i_1__14_n_0         |                1 |              3 |
+|  level_inst/butterfly1/timer_reg_n_0_[23]  | level_inst/butterfly1/deadanimation0             | level_inst/butterfly1/deadanimation[2]_i_1__3_n_0           |                2 |              3 |
+|  level_inst/butterfly10/timer_reg_n_0_[23] | level_inst/butterfly10/deadanimation0            | level_inst/butterfly10/deadanimation[2]_i_1__12_n_0         |                1 |              3 |
+|  level_inst/butterfly5/timer_reg_n_0_[23]  | level_inst/butterfly5/deadanimation0             | level_inst/butterfly5/deadanimation[2]_i_1__7_n_0           |                1 |              3 |
+|  level_inst/butterfly2/timer_reg_n_0_[23]  | level_inst/butterfly2/deadanimation0             | level_inst/butterfly2/deadanimation[2]_i_1__4_n_0           |                1 |              3 |
+|  level_inst/butterfly3/timer_reg_n_0_[23]  | level_inst/butterfly3/deadanimation0             | level_inst/butterfly3/deadanimation[2]_i_1__5_n_0           |                1 |              3 |
+|  level_inst/butterfly6/timer_reg_n_0_[23]  | level_inst/butterfly6/deadanimation0             | level_inst/butterfly6/deadanimation[2]_i_1__8_n_0           |                1 |              3 |
+|  level_inst/butterfly7/timer_reg_n_0_[23]  | level_inst/butterfly7/deadanimation0             | level_inst/butterfly7/deadanimation[2]_i_1__9_n_0           |                1 |              3 |
+|  level_inst/butterfly8/timer_reg_n_0_[23]  | level_inst/butterfly8/deadanimation0             | level_inst/butterfly8/deadanimation[2]_i_1__10_n_0          |                1 |              3 |
+|  level_inst/butterfly9/timer_reg_n_0_[23]  | level_inst/butterfly9/deadanimation0             | level_inst/butterfly9/deadanimation[2]_i_1__11_n_0          |                1 |              3 |
+|  level_inst/boss3/timer_reg_n_0_[23]       | level_inst/boss3/deadanimation0                  | level_inst/boss3/deadanimation[2]_i_1__1_n_0                |                1 |              3 |
+|  level_inst/butterfly16/timer_reg_n_0_[23] | level_inst/butterfly16/deadanimation0            | level_inst/butterfly16/deadanimation[2]_i_1__18_n_0         |                1 |              3 |
+|  level_inst/butterfly15/timer_reg_n_0_[23] | level_inst/butterfly15/deadanimation0            | level_inst/butterfly15/deadanimation[2]_i_1__17_n_0         |                1 |              3 |
+|  level_inst/bee1/timer_reg_n_0_[23]        | level_inst/bee1/deadanimation0                   | level_inst/bee1/deadanimation[2]_i_1__19_n_0                |                1 |              3 |
+|  level_inst/bee5/timer_reg_n_0_[23]        | level_inst/bee5/deadanimation0                   | level_inst/bee5/deadanimation[2]_i_1__23_n_0                |                1 |              3 |
+|  level_inst/bee4/timer_reg_n_0_[23]        | level_inst/bee4/deadanimation0                   | level_inst/bee4/deadanimation[2]_i_1__22_n_0                |                1 |              3 |
+|  level_inst/butterfly4/timer_reg_n_0_[23]  | level_inst/butterfly4/deadanimation0             | level_inst/butterfly4/deadanimation[2]_i_1__6_n_0           |                1 |              3 |
+|  level_inst/boss4/timer_reg_n_0_[23]       | level_inst/boss4/deadanimation0                  | level_inst/boss4/deadanimation[2]_i_1__2_n_0                |                1 |              3 |
+|  level_inst/bee19/timer_reg_n_0_[23]       | level_inst/bee19/deadanimation0                  | level_inst/bee19/deadanimation[2]_i_1__37_n_0               |                1 |              3 |
+|  level_inst/bee13/timer_reg_n_0_[23]       | level_inst/bee13/deadanimation0                  | level_inst/bee13/deadanimation[2]_i_1__31_n_0               |                1 |              3 |
+|  level_inst/bee14/timer_reg_n_0_[23]       | level_inst/bee14/deadanimation0                  | level_inst/bee14/deadanimation[2]_i_1__32_n_0               |                2 |              3 |
+|  level_inst/bee10/timer_reg_n_0_[23]       | level_inst/bee10/deadanimation0                  | level_inst/bee10/deadanimation[2]_i_1__28_n_0               |                1 |              3 |
+|  level_inst/bee11/timer_reg_n_0_[23]       | level_inst/bee11/deadanimation0                  | level_inst/bee11/deadanimation[2]_i_1__29_n_0               |                1 |              3 |
+|  level_inst/bee12/timer_reg_n_0_[23]       | level_inst/bee12/deadanimation0                  | level_inst/bee12/deadanimation[2]_i_1__30_n_0               |                1 |              3 |
+|  level_inst/bee17/timer_reg_n_0_[23]       | level_inst/bee17/deadanimation0                  | level_inst/bee17/deadanimation[2]_i_1__35_n_0               |                1 |              3 |
+|  level_inst/bee18/timer_reg_n_0_[23]       | level_inst/bee18/deadanimation0                  | level_inst/bee18/deadanimation[2]_i_1__36_n_0               |                1 |              3 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_5[0]                                |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_13[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_14[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_15[0]                               |                3 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_16[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_17[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_18[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_19[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_2[0]                                |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_20[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_21[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_22[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_23[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_24[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_25[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_26[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_27[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_29[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_30[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_31[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_32[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_33[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_34[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_35[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     | menu_inst/E[0]                                   |                                                             |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_4[0]                                |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     | menu_inst/hundret                                | score_inst/hundret[3]_i_1_n_0                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     | score_inst/hundretT                              |                                                             |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_37[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_36[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/boss3/enemyshoot_inst/action0         |                                                             |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     | score_inst/mio                                   |                                                             |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly13/enemyshoot_inst/action0   |                                                             |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly5/enemyshoot_inst/action0    |                                                             |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_12[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     | score_inst/tenT                                  |                                                             |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_11[0]                               |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_10[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/nolabel_line130/round[3]_i_1_n_0      |                                                             |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_1[0]                                |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee6/enemyshoot_inst/action0          |                                                             |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_0[0]                                |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_28[0]                               |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3][0]                                  |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     | score_inst/newpoint                              | menu_inst/ten_reg[3][0]                                     |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_3[0]                                |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/SR[0]                                          |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_9[0]                                |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_8[0]                                |                2 |              4 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee16/enemyshoot_inst/action0         |                                                             |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_7[0]                                |                3 |              4 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/RGB_reg[3]_6[0]                                |                1 |              4 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/shoottime_reg[0]_0                  | VGA1024_inst/shoottime_reg[0][0]                            |                1 |              5 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/timer_reg[4][0]                     |                                                             |                1 |              5 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly13/enemyshoot_inst/action0   | level_inst/nolabel_line130/Xmove_reg[5]_5                   |                3 |              6 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee16/enemyshoot_inst/action0         | level_inst/nolabel_line130/Xmove_reg[5]_7                   |                2 |              6 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/boss3/enemyshoot_inst/action0         | level_inst/nolabel_line130/Xmove_reg[5]_3                   |                2 |              6 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly5/enemyshoot_inst/action0    | level_inst/nolabel_line130/Xmove_reg[5]_4                   |                2 |              6 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee6/enemyshoot_inst/action0          | level_inst/nolabel_line130/Xmove_reg[5]_6                   |                2 |              6 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Xmove_reg[6][0]                     |                                                             |                2 |              7 |
+|  CLKTree_inst/Clk75MHz                     | menu_inst/Ymove_reg[6][0]                        |                                                             |                3 |              7 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/nolabel_line130/E[0]                  |                                                             |                3 |              7 |
+|  level_inst/timer_reg__0[4]                | menu_inst/randomshoot_reg[6][0]                  |                                                             |                2 |              7 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/nolabel_line130/movementX[10]_i_2_n_0 | level_inst/nolabel_line130/movementX[10]_i_1_n_0            |                6 |              8 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_33[0]                  | level_inst/bee15/enemyshoot_inst/Ymove[9]_i_1__33_n_0       |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_36[0]                  | level_inst/bee18/enemyshoot_inst/Ymove[9]_i_1__36_n_0       |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_4[0]                   | level_inst/butterfly2/enemyshoot_inst/Ymove[9]_i_1__4_n_0   |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_7[0]                   | level_inst/butterfly5/enemyshoot_inst/Ymove[9]_i_1__7_n_0   |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_8[0]                   | level_inst/butterfly6/enemyshoot_inst/Ymove[9]_i_1__8_n_0   |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_9[0]                   | level_inst/butterfly7/enemyshoot_inst/Ymove[9]_i_1__9_n_0   |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_35[0]                  | level_inst/bee17/enemyshoot_inst/Ymove[9]_i_1__35_n_0       |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_1[0]                   | level_inst/boss3/enemyshoot_inst/Ymove[9]_i_1__1_n_0        |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_10[0]                  | level_inst/butterfly8/enemyshoot_inst/Ymove[9]_i_1__10_n_0  |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_26[0]                  | level_inst/bee8/enemyshoot_inst/Ymove[9]_i_1__26_n_0        |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_27[0]                  | level_inst/bee9/enemyshoot_inst/Ymove[9]_i_1__27_n_0        |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_28[0]                  | level_inst/bee10/enemyshoot_inst/Ymove[9]_i_1__28_n_0       |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_3[0]                   | level_inst/butterfly1/enemyshoot_inst/Ymove[9]_i_1__3_n_0   |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_30[0]                  | level_inst/bee12/enemyshoot_inst/Ymove[9]_i_1__30_n_0       |                5 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_34[0]                  | level_inst/bee16/enemyshoot_inst/Ymove[9]_i_1__34_n_0       |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_32[0]                  | level_inst/bee14/enemyshoot_inst/Ymove[9]_i_1__32_n_0       |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/timer2[8]_i_1_n_0                     |                                                             |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | player_inst/shoot1/Y[9]_i_1_n_0                  | menu_inst/Y_reg[1][0]                                       |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | player_inst/shoot2/Y[9]_i_1__0_n_0               | player_inst/shoot2/X[9]_i_1__0_n_0                          |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/timer_reg[8][0]                     | menu_inst/SR[0]                                             |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/E[0]                                | level_inst/boss1/enemyshoot_inst/Ymove[9]_i_1_n_0           |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_0[0]                   | level_inst/boss2/enemyshoot_inst/Ymove[9]_i_1__0_n_0        |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_12[0]                  | level_inst/butterfly10/enemyshoot_inst/Ymove[9]_i_1__12_n_0 |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_13[0]                  | level_inst/butterfly11/enemyshoot_inst/Ymove[9]_i_1__13_n_0 |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_16[0]                  | level_inst/butterfly14/enemyshoot_inst/Ymove[9]_i_1__16_n_0 |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_18[0]                  | level_inst/butterfly16/enemyshoot_inst/Ymove[9]_i_1__18_n_0 |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_19[0]                  | level_inst/bee1/enemyshoot_inst/Ymove[9]_i_1__19_n_0        |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_20[0]                  | level_inst/bee2/enemyshoot_inst/Ymove[9]_i_1__20_n_0        |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_21[0]                  | level_inst/bee3/enemyshoot_inst/Ymove[9]_i_1__21_n_0        |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_31[0]                  | level_inst/bee13/enemyshoot_inst/Ymove[9]_i_1__31_n_0       |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_37[0]                  | level_inst/bee19/enemyshoot_inst/Ymove[9]_i_1__37_n_0       |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_38[0]                  | level_inst/bee20/enemyshoot_inst/Ymove[9]_i_1__38_n_0       |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_5[0]                   | level_inst/butterfly3/enemyshoot_inst/Ymove[9]_i_1__5_n_0   |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_6[0]                   | level_inst/butterfly4/enemyshoot_inst/Ymove[9]_i_1__6_n_0   |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_11[0]                  | level_inst/butterfly9/enemyshoot_inst/Ymove[9]_i_1__11_n_0  |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_14[0]                  | level_inst/butterfly12/enemyshoot_inst/Ymove[9]_i_1__14_n_0 |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_15[0]                  | level_inst/butterfly13/enemyshoot_inst/Ymove[9]_i_1__15_n_0 |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_17[0]                  | level_inst/butterfly15/enemyshoot_inst/Ymove[9]_i_1__17_n_0 |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_2[0]                   | level_inst/boss4/enemyshoot_inst/Ymove[9]_i_1__2_n_0        |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_22[0]                  | level_inst/bee4/enemyshoot_inst/Ymove[9]_i_1__22_n_0        |                2 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_23[0]                  | level_inst/bee5/enemyshoot_inst/Ymove[9]_i_1__23_n_0        |                4 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_24[0]                  | level_inst/bee6/enemyshoot_inst/Ymove[9]_i_1__24_n_0        |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_25[0]                  | level_inst/bee7/enemyshoot_inst/Ymove[9]_i_1__25_n_0        |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/Ymove_reg[9]_29[0]                  | level_inst/bee11/enemyshoot_inst/Ymove[9]_i_1__29_n_0       |                3 |              9 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee14/enemyshoot_inst/action0         |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/boss1/enemyshoot_inst/action0         |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | menu_inst/Y_reg[1][0]                            |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee13/enemyshoot_inst/action0         |                                                             |                5 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee8/enemyshoot_inst/action0          |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | player_inst/shoot2/X[9]_i_1__0_n_0               |                                                             |                2 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee9/enemyshoot_inst/action0          |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee2/enemyshoot_inst/action0          |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee19/enemyshoot_inst/action0         |                                                             |                4 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/boss4/enemyshoot_inst/action0         |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly2/enemyshoot_inst/action0    |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly16/enemyshoot_inst/action0   |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee18/enemyshoot_inst/action0         |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee17/enemyshoot_inst/action0         |                                                             |                4 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee10/enemyshoot_inst/action0         |                                                             |                6 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee1/enemyshoot_inst/action0          |                                                             |                4 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee5/enemyshoot_inst/action0          |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee4/enemyshoot_inst/action0          |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee20/enemyshoot_inst/action0         |                                                             |                5 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee12/enemyshoot_inst/action0         |                                                             |                6 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee11/enemyshoot_inst/action0         |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/boss2/enemyshoot_inst/action0         |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee3/enemyshoot_inst/action0          |                                                             |                5 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly1/enemyshoot_inst/action0    |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly14/enemyshoot_inst/action0   |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly15/enemyshoot_inst/action0   |                                                             |                4 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly11/enemyshoot_inst/action0   |                                                             |                6 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly12/enemyshoot_inst/action0   |                                                             |                7 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly10/enemyshoot_inst/action0   |                                                             |                4 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee7/enemyshoot_inst/action0          |                                                             |                4 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/bee15/enemyshoot_inst/action0         |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly6/enemyshoot_inst/action0    |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly3/enemyshoot_inst/action0    |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly4/enemyshoot_inst/action0    |                                                             |                4 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly7/enemyshoot_inst/action0    |                                                             |                3 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly8/enemyshoot_inst/action0    |                                                             |                4 |             10 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/butterfly9/enemyshoot_inst/action0    |                                                             |                6 |             10 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | VGA1024_inst/PixX[10]_i_1_n_0                               |                7 |             11 |
+|  CLKTree_inst/Clk75MHz                     | player_inst/sel_0                                | player_inst/clear                                           |                4 |             11 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/nolabel_line130/movementY[10]_i_2_n_0 | level_inst/nolabel_line130/movementY[10]_i_1_n_0            |                8 |             19 |
+|  CLKTree_inst/Clk75MHz                     | VGA1024_inst/PixY                                |                                                             |                8 |             21 |
+|  CLKTree_inst/Clk75MHz                     | score_inst/newpoint                              | menu_inst/clear                                             |                6 |             21 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/A[0]_0                                | menu_inst/oldpoint                                          |               16 |             27 |
+|  CLKTree_inst/Clk75MHz                     |                                                  | menu_inst/oldpoint                                          |               23 |             40 |
+|  CLKTree_inst/Clk75MHz                     | level_inst/olddead_reg[39]_i_1_n_2               |                                                             |               12 |             40 |
+|  CLKTree_inst/Clk75MHz                     |                                                  |                                                             |              357 |           1115 |
++--------------------------------------------+--------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    41 |
+| 2      |                     2 |
+| 3      |                    40 |
+| 4      |                    52 |
+| 5      |                     2 |
+| 6      |                     5 |
+| 7      |                     4 |
+| 8      |                     1 |
+| 9      |                    44 |
+| 10     |                    37 |
+| 11     |                     2 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+
